@@ -29,12 +29,12 @@
       <li><a href="#primaryContent">Skip to main content</a></li>
       <li><a href="#secondaryContent">Skip to secondary content</a></li>
       <li><a href="#footer">Skip to footer</a></li>
+      <?php wp_nav_menu( array( 'theme_location' => 'menu-2' ) ); ?>
     </ul-->
     <header role="banner">
-        <?php
-        // see this theme's functions.php
-        print do_heading();
-        print naked_nav($post);
-        ?>
+        <?php print do_heading(); ?>
+        <nav>
+            <?php wp_nav_menu( array( 'theme_location' => 'menu-1' ) ); ?>
+        </nav>
     </header>
     <main role="main">

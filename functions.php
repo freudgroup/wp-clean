@@ -82,4 +82,7 @@ function register_my_menus() {
     }
 }
 
+// Adding support for thumbnails on posts
+add_theme_support('post-thumbnails');
+
 ?>
